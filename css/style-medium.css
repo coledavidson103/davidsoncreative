@@ -1,0 +1,88 @@
+@media (min-width: 48em) {
+  /***** VARIABLES *****/
+  /***** HEADER *****/
+  .logo {
+    width: 20em; }
+
+  nav {
+    display: block;
+    width: auto;
+    line-height: 4em;
+    position: static;
+    background: none;
+    float: right; }
+    nav a {
+      color: #fff; }
+    nav .submenu {
+      position: fixed;
+      top: 5em;
+      right: 11em;
+      padding: 0 1em; }
+      nav .submenu li {
+        display: block; }
+    nav .submenu-show {
+      display: block; }
+
+  nav li {
+    display: inline-block;
+    padding: 0 0.29em; }
+
+  nav ul ul {
+    display: none; }
+
+  nav ul li:hover > ul {
+    display: block; }
+
+  .mobile-nav {
+    display: none; }
+
+  .page-title-container {
+    width: 50%; }
+
+  h2.page-title {
+    /*margin: 2em 0 0 0;*/ }
+
+  /***** MAIN *****/
+  .services {
+    text-align: center;
+    overflow: hidden; }
+
+  .service, .example {
+    width: 100%;
+    height: 10em; }
+
+  .service-icon {
+    font-size: 1.5em;
+    float: left; }
+
+  .service p, .example p {
+    padding: 0.5em 0 0 8em; }
+
+  .client-list {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .workspace {
+    padding: 0.5em; }
+
+  .workspace h2 {
+    padding: 0.25em 0 0.5em 0; }
+
+  .workspace-slider {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto; }
+
+  .workspace-display {
+    background-color: #646464;
+    overflow: hidden; }
+
+  .grid-item {
+    width: 30%;
+    margin: 1% 1.6%; }
+
+  .grid-item-width2 {
+    width: 63.2%; } }
+
+/*# sourceMappingURL=style-medium.css.map */

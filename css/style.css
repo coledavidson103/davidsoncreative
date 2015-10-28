@@ -1,0 +1,347 @@
+/***** VARIABLES *****/
+/***** GENERAL STYLES *****/
+@import url(https://fonts.googleapis.com/css?family=Eczar:400,600,700);
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  color: #58585a;
+  font-size: 1em;
+  font-family: 'Source Sans Pro', Helvetica, arial, sans-serif; }
+
+strong {
+  font-weight: 600; }
+
+h2 {
+  font-family: Eczar, Times, serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.5em; }
+
+a {
+  color: #039BE5; }
+
+/***** HEADER *****/
+header {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../img/header-background.jpg);
+  /* Setting positioning to relative so that .page-title can be absolutely
+  positioned to this */
+  position: relative; }
+
+header.sub {
+  height: 70%; }
+
+.top-bar {
+  height: 7em;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.logo {
+  width: 15em;
+  position: absolute; }
+  .logo img {
+    width: 100%; }
+  .logo p {
+    color: transparent;
+    font-size: 0; }
+
+.mobile-nav {
+  float: right;
+  color: #fff;
+  padding: 1em;
+  display: block; }
+
+nav {
+  width: 100%;
+  color: #58585a;
+  margin-top: 1em;
+  text-align: center;
+  font-weight: 600;
+  position: fixed;
+  top: 4em;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1em;
+  line-height: 2;
+  display: none; }
+  nav.mobile-nav-show {
+    display: block; }
+  nav a {
+    color: #58585a;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+  nav a:hover {
+    color: #039BE5;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+  nav .submenu {
+    display: none;
+    background-color: #039BE5; }
+    nav .submenu a {
+      color: #fff; }
+    nav .submenu a:hover {
+      color: #58585a; }
+  nav .submenu-show {
+    display: block; }
+
+.page-title-container {
+  width: 100%;
+  height: 6em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+h2.page-title {
+  font-size: 3em;
+  line-height: 1;
+  font-weight: 600;
+  /* The text-align center is no longer needed since I'm absolutely positioning
+  this element. Since we've taken full control over where we're placing this element
+  the text-align center style rule doesn't have any affect over this element anymore */
+  text-align: center;
+  color: #fff;
+  /*margin: 50% 0;*/
+  /* This will be absolutely positioned to its parent, the header */ }
+
+h2.page-title-small {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+#scroller a {
+  position: absolute;
+  bottom: 2em;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+#scroller a:hover {
+  color: #039BE5;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+/***** MAIN *****/
+.intro {
+  background-color: #fff;
+  margin: 1.5em; }
+
+.description {
+  text-align: center; }
+
+.next {
+  line-height: 5em;
+  text-align: center;
+  border-bottom: 1px solid #58585a; }
+
+.blue-button {
+  border: 1px solid #039BE5;
+  background-color: #039BE5;
+  border-radius: 100px;
+  padding: 1em 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+.blue-button:hover {
+  background-color: #fff;
+  color: #039BE5;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+.blue-button:active, .blue-button.is-checked {
+  background-color: red; }
+
+.white-button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 1em 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #039BE5;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+.white-button:hover {
+  background-color: #039BE5;
+  border-color: #fff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+.white-button:active {
+  background-color: #039BE5;
+  border-color: #fff;
+  color: #fff; }
+
+.service, .example {
+  width: 100%;
+  background-color: #D1DADE;
+  padding: 1em;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  color: #000; }
+
+.service-alt {
+  background-color: #fff; }
+
+.service .fa-5x, .example .fa-5x {
+  text-align: center;
+  width: 100%; }
+
+a.service-icon {
+  color: #333; }
+
+.service h3, .example h3 {
+  font-family: Eczar, Times, serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0 0.25em 0;
+  text-decoration: none; }
+
+.service a, .example a {
+  text-decoration: none; }
+
+.graphic {
+  background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/services/graphic.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.video {
+  background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/services/video.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.strategy {
+  background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/services/strategy.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.web {
+  background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/services/web.jpg");
+  background-size: cover;
+  background-position: center right; }
+
+.photo {
+  background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../img/services/photo.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.clients {
+  margin-top: 2em; }
+
+.client-list {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto; }
+
+.client-item img {
+  height: 8em;
+  width: auto; }
+
+.client-item {
+  display: inline-block; }
+
+.sort {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em; }
+  .sort p {
+    display: inline-block;
+    font-size: 1.25em; }
+  .sort ul {
+    display: inline-block; }
+  .sort li {
+    display: inline-block;
+    margin-top: 0.5em; }
+
+.sort-select {
+  background-color: #039BE5;
+  color: #fff;
+  padding: 1em;
+  margin-top: 0.5em;
+  display: none; }
+  .sort-select li {
+    margin: 0.25em; }
+
+.sort-select-show {
+  display: block; }
+
+.workspace {
+  background-color: #333; }
+  .workspace h2 {
+    text-align: center;
+    padding: 0.5em;
+    color: #fff; }
+
+.work img {
+  width: 100%;
+  padding: 0 0 1.5em 0; }
+
+.grid-item {
+  width: 100%; }
+
+/*****FOOTER*****/
+.social {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #D1DADE; }
+  .social li {
+    display: inline-block;
+    padding: 0.5em; }
+  .social a {
+    color: #58585a;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+  .social a:hover {
+    color: #039BE5;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+
+.copyright {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+@media (min-width: 60em /*960px*/) {
+	
+	.intro {
+		width: 60em;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+
+	.service {
+		width: 20%;
+		height: 19em;
+		display: inline-block;
+		float: left;
+	}
+
+	.example {
+		width: 50%;
+		height: 16em;
+		display: inline-block;
+		float: left;
+	}
+
+	.service-icon {
+		float: none;
+	}
+
+	.service p, .example p {
+		padding: 0;
+	}
+
+
+	.client-list {
+		width: 60em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+}
