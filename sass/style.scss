@@ -49,6 +49,7 @@
 		/* Setting positioning to relative so that .page-title can be absolutely
 		positioned to this */
 		position: relative;
+		min-height: 100%;
 	}
 
 	header.sub {

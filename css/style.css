@@ -32,7 +32,8 @@ header {
   background-image: url(../img/header-background.jpg);
   /* Setting positioning to relative so that .page-title can be absolutely
   positioned to this */
-  position: relative; }
+  position: relative;
+  min-height: 100%; }
 
 header.sub {
   height: 70%; }
